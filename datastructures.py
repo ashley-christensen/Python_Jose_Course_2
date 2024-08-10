@@ -55,13 +55,30 @@
 # num_list.sort()
 # print(num_list)
 
-d = {'key1': 'value1', 'key2': [1,3,2], 'key3': 'value3'}
-print(d['key2'])
-d['key4'] = 'value4'
-print(d)
+# d = {'key1': 'value1', 'key2': [1,3,2], 'key3': 'value3'}
+# print(d['key2'])
+# d['key4'] = 'value4'
+# print(d)
 
-print(d.keys())
-print(d.values())
-print(d.items())
+# print(d.keys())
+# print(d.values())
+# print(d.items())
 
 
+# t = (1,2,3)
+# print(type(t))
+# print(t[0])
+# print(t.count(1))
+# print(t.index(3))
+
+mys = set()
+mys.add(1)
+print(mys)
+mys.add(2)
+print(mys)
+mys.add(2)
+print(mys)
+
+mylist = [3,3,3,4,4,2,2,5,5,1,2,7,8,9]
+set(mylist)
+print(set(mylist))

@@ -27,7 +27,30 @@
 # print(result)
 # print('the result was.. {r:1.2}'.format(r = result))
 
-name = 'Ashley'
-age = 35
+# name = 'Ashley'
+# age = 35
 
-print(f'Hello, her name is {name} and she is {age} years old ')
+# print(f'Hello, her name is {name} and she is {age} years old ')
+
+# my_list = [1, 2, 3]
+# print(my_list)
+# new_list = ['a', 'hello', 16]
+# print(my_list)
+# len(my_list)
+# my_list[1:]
+# print(my_list[1:])
+# print(my_list + new_list)
+
+# new_list = ['hello', 'whats up']
+
+
+# popped_item = new_list.pop()
+# # print(popped_item)
+# print(new_list.pop(-1))
+
+new_list = ['a', 'i', 'e', 'o', 'y']
+num_list = [4,3,1,2]
+new_list.sort()
+print(new_list)
+num_list.sort()
+print(num_list)

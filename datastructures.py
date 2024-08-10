@@ -48,9 +48,20 @@
 # # print(popped_item)
 # print(new_list.pop(-1))
 
-new_list = ['a', 'i', 'e', 'o', 'y']
-num_list = [4,3,1,2]
-new_list.sort()
-print(new_list)
-num_list.sort()
-print(num_list)
+# new_list = ['a', 'i', 'e', 'o', 'y']
+# num_list = [4,3,1,2]
+# new_list.sort()
+# print(new_list)
+# num_list.sort()
+# print(num_list)
+
+d = {'key1': 'value1', 'key2': [1,3,2], 'key3': 'value3'}
+print(d['key2'])
+d['key4'] = 'value4'
+print(d)
+
+print(d.keys())
+print(d.values())
+print(d.items())
+
+

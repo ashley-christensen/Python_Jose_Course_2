@@ -71,14 +71,21 @@
 # print(t.count(1))
 # print(t.index(3))
 
-mys = set()
-mys.add(1)
-print(mys)
-mys.add(2)
-print(mys)
-mys.add(2)
-print(mys)
+# mys = set()
+# mys.add(1)
+# print(mys)
+# mys.add(2)
+# print(mys)
+# mys.add(2)
+# print(mys)
 
-mylist = [3,3,3,4,4,2,2,5,5,1,2,7,8,9]
-set(mylist)
-print(set(mylist))
+# mylist = [3,3,3,4,4,2,2,5,5,1,2,7,8,9]
+# set(mylist)
+# print(set(mylist))
+
+print(True)
+print(False)
+print(type(False))
+print(1 > 2)
+b = None
+print(type(b))

@@ -83,9 +83,18 @@
 # set(mylist)
 # print(set(mylist))
 
-print(True)
-print(False)
-print(type(False))
-print(1 > 2)
-b = None
-print(type(b))
+# print(True)
+# print(False)
+# print(type(False))
+# print(1 > 2)
+# b = None
+# print(type(b))
+
+myfile = open('myfile.txt')
+# print(myfile.read())
+myfile.seek(0)
+
+contents = myfile.read()
+# print(contents)
+reading = myfile.readlines()
+print(reading)

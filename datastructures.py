@@ -136,7 +136,7 @@ import math
 # print(s[4])
 
 # list3 = [1,2,[3,4,'hello']]
-# list3[3][3] = 'goodbye'
+# list3[2][2] = 'goodbye'
 # # print(list3)
 
 # list4 = [5,3,4,6,1]
@@ -156,13 +156,13 @@ import math
 
 # #Grab hello
 
-# print(d['k1'][0]['nest_key'][1][0])
+# # print(d['k1'][0]['nest_key'][1][0])
 
-# This will be hard and annoying!
-d = {'k1':[1,2,{'k2':['this is tricky',{'tough':[1,2,['hello']]}]}]}
+# # This will be hard and annoying!
+# d = {'k1':[1,2,{'k2':['this is tricky',{'tough':[1,2,['hello']]}]}]}
 
-print(d['k1'][2]['k2'][1]['tough'][2][0])
+# print(d['k1'][2]['k2'][1]['tough'][2][0])
 
-list5 = [1,2,2,33,4,4,11,22,3,3,2]
+# # list5 = [1,2,2,33,4,4,11,22,3,3,2]
 
-print(set(list5))
+# print(set(list5))

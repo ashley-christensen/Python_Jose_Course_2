@@ -23,8 +23,29 @@
 # else: 
 #     print("I do not know much")
 
+mylist = [1,2,3,4,5,6,7,8,9,10]
 name = "Ashley"
 fruits = ["apple", "banana", "orange", "mango", "avocado", "coconut", "pineapple"]
 plants = {0: "tree", 2: "flower", 3: "lawn", 4: "houseplant"}
-for item in plants:
-    print(plants[item])
+# for item in fruits:
+#     print(item)
+
+# for i in name:
+#     print(i)
+
+# for fruit in fruits:
+#     print(fruit)
+
+# for thekey in plants:
+#     print(plants[thekey])
+
+# for fruit in fruits:
+
+#     if fruit[0] == 'm':
+#         print(fruit)
+
+
+for key in plants:
+
+    if key % 2 == 0:
+        print(plants[key])

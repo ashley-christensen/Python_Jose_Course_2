@@ -41,24 +41,42 @@
 #     if fruit[0] == 'm':
 #         print(fruit)
 
-mylist = [1,2,3,4,5,6,7,8,9,10]
-name = "Ashley"
-fruits = ["apple", "banana", "orange", "mango", "avocado", "coconut", "pineapple"]
+# mylist = [1,2,3,4,5,6,7,8,9,10]
+# name = "Ashley"
+# fruits = ["apple", "banana", "orange", "mango", "avocado", "coconut", "pineapple"]
+# plants = {0: "tree", 2: "flower", 3: "lawn", 4: "houseplant"}
+# for key in plants:
+
+#     if key % 2 == 0:
+#         print(f'even number: {key} = {plants[key]}')
+#     else:
+#         print(f"odd number: {key}")
+
+# list_sum = 0
+
+# for num in mylist:
+#     list_sum = list_sum + num
+#     print(list_sum) #inside for loop
+
+#     if num == mylist[-1]:
+#         print(f'the end because number is: {mylist[-1]}')
+
+# print(f"LIST SUM: {list_sum} ") #outside for loop
+
+
+# mystring = "Hello World"
+# for letter in mystring:
+#     print(letter)
+
+
+# mylist = [(1,2,3), (3,4,5), (5,6,7), (7,8,9)]
+# # print(len(mylist))
+
+# for a,b,c in mylist: #tuple unpacking
+#     print(a)
+
+    
 plants = {0: "tree", 2: "flower", 3: "lawn", 4: "houseplant"}
-for key in plants:
 
-    if key % 2 == 0:
-        print(f'even number: {key} = {plants[key]}')
-    else:
-        print(f"odd number: {key}")
-
-list_sum = 0
-
-for num in mylist:
-    list_sum = list_sum + num
-    print(list_sum)
-
-    if num == mylist[-1]:
-        print(f'the end because number is: {mylist[-1]}')
-
-print(f"LIST SUM: {list_sum} ")
+for i, value in plants.items():
+    print(f"this is {i}, so value is {value}")

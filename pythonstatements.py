@@ -102,9 +102,20 @@
 
 #while loops
 
-x = 0 
+# x = 0 
+# list = ["1"]
 
-while x <= 5:
-    print(f'the current value of x is {x}')
-    x = x + 1
+# while x <= 5:
+#     if x % 2 == 0:
+#         pass
+#     if x % 2 != 0:
+#         print(f'the current value of x is {x}')
 
+#     x += 1
+
+
+mystring = 'Ashley'
+for letter in mystring:
+    if letter == 'e':
+        break
+    print(letter)

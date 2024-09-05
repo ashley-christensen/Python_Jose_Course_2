@@ -78,5 +78,14 @@
     
 plants = {0: "tree", 2: "flower", 3: "lawn", 4: "houseplant"}
 
-for i, value in plants.items():
-    print(f"this is {i}, so value is {value}")
+# for i, value in plants.items(): #.items() returns a tuple 
+#     print(f"this is {i}, so value is {value}")
+
+for i in plants.values():
+    print(i)
+
+for i in plants.items():
+    print(i)
+
+for key in plants:
+    print(key)

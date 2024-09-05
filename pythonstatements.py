@@ -84,8 +84,11 @@ plants = {0: "tree", 2: "flower", 3: "lawn", 4: "houseplant"}
 for i in plants.values():
     print(i)
 
-for i in plants.items():
-    print(i)
+# for i in plants.items():
+#     print(i)
 
-for key in plants:
-    print(key)
+# for key in plants:
+#     print(key)
+
+for i in plants.values():
+    print(i)

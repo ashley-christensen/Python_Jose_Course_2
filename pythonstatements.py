@@ -76,13 +76,13 @@
 #     print(a)
 
     
-plants = {0: "tree", 2: "flower", 3: "lawn", 4: "houseplant"}
+# plants = {0: "tree", 2: "flower", 3: "lawn", 4: "houseplant"}
 
-# for i, value in plants.items(): #.items() returns a tuple 
-#     print(f"this is {i}, so value is {value}")
+# # for i, value in plants.items(): #.items() returns a tuple 
+# #     print(f"this is {i}, so value is {value}")
 
-for i in plants.values():
-    print(i)
+# for i in plants.values():
+#     print(i)
 
 # for i in plants.items():
 #     print(i)
@@ -90,5 +90,21 @@ for i in plants.values():
 # for key in plants:
 #     print(key)
 
-for i in plants.values():
-    print(i)
+# for i in plants.values():
+#     print(i)
+
+# myhouse = ["shower", "plants", "kid", "friends"]
+
+# for i in myhouse:
+#     print(i)
+
+
+
+#while loops
+
+x = 0 
+
+while x <= 5:
+    print(f'the current value of x is {x}')
+    x = x + 1
+

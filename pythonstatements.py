@@ -127,16 +127,20 @@
 
 # print(list(range(0,12,2)))
 
-index_count = 0
+# index_count = 0
 
-for letter in 'abcde':
-    print('at index {} the letter is {}'.format(index_count,letter))
-    index_count += 1
+# for letter in 'abcde':
+#     print('at index {} the letter is {}'.format(index_count,letter))
+#     index_count += 1
 
 
 num = 0
 mylist = ['apple', 'banana', 'orange', 'peach']
 
-for fruit in mylist:
-    print('at num {} we get fruit from my list {}'.format(num, fruit))
-    num += 1
+# for fruit in mylist:
+#     print('at num {} we get fruit from my list {}'.format(num, fruit))
+#     num += 1
+
+for index, fruit in enumerate(mylist):
+    print(f'{index} = {fruit}')
+  

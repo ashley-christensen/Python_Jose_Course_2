@@ -114,8 +114,29 @@
 #     x += 1
 
 
-mystring = 'Ashley'
-for letter in mystring:
-    if letter == 'e':
-        break
-    print(letter)
+# mystring = 'Ashley'
+# for letter in mystring:
+#     if letter == 'e':
+#         break
+#     print(letter)
+
+#useful operators 
+
+# for num in range(3,10,2): #up to but not including 10
+#     print(num)
+
+# print(list(range(0,12,2)))
+
+index_count = 0
+
+for letter in 'abcde':
+    print('at index {} the letter is {}'.format(index_count,letter))
+    index_count += 1
+
+
+num = 0
+mylist = ['apple', 'banana', 'orange', 'peach']
+
+for fruit in mylist:
+    print('at num {} we get fruit from my list {}'.format(num, fruit))
+    num += 1

@@ -146,8 +146,14 @@
 # for index, fruit in enumerate(mylist):
 #     print(f'{index} = {fruit}')
   
-mylist1 = [1,2,3,4,5]
-mylist2 = ['a', 'b', 'c']
+# mylist1 = [1,2,3,4,5]
+# mylist2 = ['a', 'b', 'c']
 
-for item in zip(mylist1,mylist2):
-    print(item)
+#  #zip ==> [pairs up and maps two lists according to index]
+# for item in zip(mylist1,mylist2):
+#     print(item)
+
+# list(zip(mylist1, mylist2))
+# print(list)
+
+print(2 in [1,2,3])

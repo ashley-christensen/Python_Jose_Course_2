@@ -134,17 +134,20 @@
 #     index_count += 1
 
 
-num = 0
-mylist = ['apple', 'banana', 'orange', 'peach']
+# num = 0
+# mylist = ['apple', 'banana', 'orange', 'peach']
 
 #'string'.format() --> 
 # for fruit in mylist:
 #     print('at num {} we get fruit from my list {}'.format(num, fruit))
 #     num += 1
 
-#enumerate(list)
+#enumerate(list) ==> gives index count for us in form of tuples
 # for index, fruit in enumerate(mylist):
 #     print(f'{index} = {fruit}')
   
-for item in mylist:
-         print(item.format(index, fruit))
+mylist1 = [1,2,3,4,5]
+mylist2 = ['a', 'b', 'c']
+
+for item in zip(mylist1,mylist2):
+    print(item)

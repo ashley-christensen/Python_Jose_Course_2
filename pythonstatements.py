@@ -137,10 +137,14 @@
 num = 0
 mylist = ['apple', 'banana', 'orange', 'peach']
 
+#'string'.format() --> 
 # for fruit in mylist:
 #     print('at num {} we get fruit from my list {}'.format(num, fruit))
 #     num += 1
 
-for index, fruit in enumerate(mylist):
-    print(f'{index} = {fruit}')
+#enumerate(list)
+# for index, fruit in enumerate(mylist):
+#     print(f'{index} = {fruit}')
   
+for item in mylist:
+         print(item.format(index, fruit))

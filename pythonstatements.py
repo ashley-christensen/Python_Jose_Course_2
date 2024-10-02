@@ -211,8 +211,36 @@
 # call = say_hello(result)
 # print(call)
 
-def add_function(num1, num2):
-    return num1 + num2
+# def add_function(num1, num2):
+#     return num1 + num2
 
-numbers = add_function(3,4)
-print(numbers)
+# numbers = add_function(3,4)
+# print(numbers)
+
+# def even_check(number):
+#    return number % 2 == 0
+
+# final = even_check(20)
+# print(final)
+
+# mylist = [x for x in range(1,12)]
+# print(mylist)
+
+# def evens_only(list):
+#     return [x for x in list if x%2 == 0]
+
+# evens = evens_only(mylist)
+# print(evens)
+
+def give_evens_list(list):
+
+    new_list = []
+
+    for number in list:
+        if number % 2 == 0:
+            new_list.append(number)
+
+    return new_list
+
+result = give_evens_list([1,2,3,4,5,6])
+print(result)

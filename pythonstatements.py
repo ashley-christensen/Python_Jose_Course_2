@@ -178,19 +178,25 @@
 # myfruit = [x for x in myveg if x == 'watermelon']
 # print(myfruit)
 
-mynums = [x for x in range(1, 101)]
+# mynums = [x for x in range(1, 101)]
 
-for num in mynums:
-    if num%3 == 0 and num%5 == 0:
-        print(f'{num} = fizzbuzz')
-    if num%3 == 0:
-        print(f'{num} = fizz')
-    if num % 5 == 0:
-        print(f'{num} = buzz')
-    else:
-        print(num)
+# for num in mynums:
+#     if num%3 == 0 and num%5 == 0:
+#         print(f'{num} = fizzbuzz')
+#     if num%3 == 0:
+#         print(f'{num} = fizz')
+#     if num % 5 == 0:
+#         print(f'{num} = buzz')
+#     else:
+#         print(num)
 
 
-st = 'create a list of teh first letters of every word in this string'
-mylist = [x for x in st.split()[1]]
+# st = 'create a list of teh first letters of every word in this string'
+# mylist = [x for x in st.split()[1]]
+# print(mylist)
+
+mylist = [1,2,3,4]
+
+mylist.append(1)
 print(mylist)
+help(mylist.insert)

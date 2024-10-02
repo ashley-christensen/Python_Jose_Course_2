@@ -195,8 +195,24 @@
 # mylist = [x for x in st.split()[1]]
 # print(mylist)
 
-mylist = [1,2,3,4]
+# mylist = [1,2,3,4]
 
-mylist.append(1)
-print(mylist)
-help(mylist.insert)
+# mylist.append(1)
+# print(mylist)
+
+# def name_of_function() --> snake casing
+
+# result = input('enter your name here')
+
+# def say_hello(name):
+#     '''calls hello'''
+#     return f'hello  + {name}'
+
+# call = say_hello(result)
+# print(call)
+
+def add_function(num1, num2):
+    return num1 + num2
+
+numbers = add_function(3,4)
+print(numbers)

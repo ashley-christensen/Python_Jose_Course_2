@@ -157,3 +157,15 @@
 # print(list)
 
 print(2 in [1,2,3])
+
+from random import shuffle
+mylist = [1,2,3]
+shuffle(mylist)
+print(mylist)
+
+from random import randint
+randint(0,100)
+print(randint(0,10))
+
+result = input('enter a number here: ')
+print(f'whoa {result}')

@@ -245,7 +245,7 @@
 # result = give_evens_list([x for x in range(1,150)])
 # print(result)
 
-work_hours = [('Abby',100), ('Billy', 400), ('John', 900)]
+work_hours = [('Abby',1000), ('Billy', 400), ('John', 900)]
 
 def employee_check(work_hours):
     current_max = 0
@@ -259,8 +259,8 @@ def employee_check(work_hours):
             pass
  
     #Return
-    print(employee_of_month, current_max)
     return (employee_of_month, current_max)
 
-employee_check(work_hours)
- 
+result = employee_check(work_hours)
+name, hours = employee_check(work_hours)
+print(hours, name)

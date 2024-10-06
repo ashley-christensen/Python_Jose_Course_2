@@ -267,37 +267,55 @@
 
 
 
-# Interactions between functions
-example = [' ', 'O', ' ']
-from random import shuffle
-result = shuffle(example)
+# # Interactions between functions
+# example = [' ', 'O', ' ']
+# from random import shuffle
+# result = shuffle(example)
 
-def shuffle_list(mylist):
-    shuffle(mylist)
-    return(mylist)
+# def shuffle_list(mylist):
+#     shuffle(mylist)
+#     return(mylist)
 
-def player_guess():
-    guess = '' 
+# def player_guess():
+#     guess = '' 
 
-    while guess not in ["0", "1", "2"]:
-        guess = input("Pick a number: 0, 1, or 2")
+#     while guess not in ["0", "1", "2"]:
+#         guess = input("Pick a number: 0, 1, or 2")
 
-    return int(guess)
+#     return int(guess)
 
-myindex = player_guess()
+# myindex = player_guess()
 
-def check_guess(mylist, guess):
-    if mylist[guess] == 'O':
-        print('Correct!')
-    else:
-        print("Wrong Guess!")
-        print(mylist)
+# def check_guess(mylist, guess):
+#     if mylist[guess] == 'O':
+#         print('Correct!')
+#     else:
+#         print("Wrong Guess!")
+#         print(mylist)
 
-#Initial List
-mylist = [' ', 'O', ' ']
-#Shuffle List
-mixedup_list = shuffle_list(mylist)
-#User Guess
-guess = player_guess()
-#Check User Guess
-check_guess(mixedup_list, guess)
+# #Initial List
+# mylist = [' ', 'O', ' ']
+# #Shuffle List
+# mixedup_list = shuffle_list(mylist)
+# #User Guess
+# guess = player_guess()
+# #Check User Guess
+# check_guess(mixedup_list, guess)
+
+
+#Quick Solutions
+#*arg arbitrary number of parameters
+
+# def myfunc(*args):#treat as tuple of parameters
+#     print(args)
+#     return sum(args) * .05
+    
+
+# result = myfunc(40, 60)
+# print(result)
+
+def myfunc(**kwargs):
+    if 'this' in kwargs:
+        print('my fruit of chioce is {}'.format(kwargs['this']))
+
+myfunc(this='apple')

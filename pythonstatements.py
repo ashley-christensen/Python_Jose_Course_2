@@ -314,8 +314,14 @@
 # result = myfunc(40, 60)
 # print(result)
 
-def myfunc(**kwargs):
-    if 'this' in kwargs:
-        print('my fruit of chioce is {}'.format(kwargs['this']))
+# def myfunc(**kwargs): #treat as dictionary of parameters
+#     if 'fruit' in kwargs:
+#         print('my fruit of chioce is {}'.format(kwargs['fruit']))
 
-myfunc(this='apple')
+# myfunc(fruit='fruit')
+
+def myfunc(*args, **kwargs):
+    print('I would like {} {}'.format(args[1], kwargs['food']))
+
+result = myfunc(10,20,30, fruit = 'apple', food = 'rice')
+print(result)

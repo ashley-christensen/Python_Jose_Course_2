@@ -232,15 +232,20 @@
 # evens = evens_only(mylist)
 # print(evens)
 
-def give_evens_list(list):
+# def give_evens_list(list):
 
-    new_list = []
+#     new_list = []
 
-    for number in list:
-        if number % 2 == 0:
-            new_list.append(number)
+#     for number in list:
+#         if number % 2 == 0:
+#             new_list.append(number)
 
-    return new_list
+#     return new_list
 
-result = give_evens_list([1,2,3,4,5,6])
-print(result)
+# result = give_evens_list([x for x in range(1,150)])
+# print(result)
+
+stock_prices = [('APPL',200), ('GOOG', 400)]
+
+for ticker,price in stock_prices:
+    print(f'{ticker} = {price}')

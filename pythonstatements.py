@@ -245,22 +245,59 @@
 # result = give_evens_list([x for x in range(1,150)])
 # print(result)
 
-work_hours = [('Abby',1000), ('Billy', 400), ('John', 900)]
+# work_hours = [('Abby',1000), ('Billy', 400), ('John', 900)]
 
-def employee_check(work_hours):
-    current_max = 0
-    employee_of_month = ''
+# def employee_check(work_hours):
+#     current_max = 0
+#     employee_of_month = ''
 
-    for employee, hours in work_hours:
-        if hours > current_max:
-            current_max = hours
-            employee_of_month = employee
-        else:
-            pass
+#     for employee, hours in work_hours:
+#         if hours > current_max:
+#             current_max = hours
+#             employee_of_month = employee
+#         else:
+#             pass
  
-    #Return
-    return (employee_of_month, current_max)
+#     #Return
+#     return (employee_of_month, current_max)
 
-result = employee_check(work_hours)
-name, hours = employee_check(work_hours)
-print(hours, name)
+# result = employee_check(work_hours)
+# name, hours = employee_check(work_hours)
+# print(hours, name)
+
+
+
+# Interactions between functions
+example = [' ', 'O', ' ']
+from random import shuffle
+result = shuffle(example)
+
+def shuffle_list(mylist):
+    shuffle(mylist)
+    return(mylist)
+
+def player_guess():
+    guess = '' 
+
+    while guess not in ["0", "1", "2"]:
+        guess = input("Pick a number: 0, 1, or 2")
+
+    return int(guess)
+
+myindex = player_guess()
+
+def check_guess(mylist, guess):
+    if mylist[guess] == 'O':
+        print('Correct!')
+    else:
+        print("Wrong Guess!")
+        print(mylist)
+
+#Initial List
+mylist = [' ', 'O', ' ']
+#Shuffle List
+mixedup_list = shuffle_list(mylist)
+#User Guess
+guess = player_guess()
+#Check User Guess
+check_guess(mixedup_list, guess)

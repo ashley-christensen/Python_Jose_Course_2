@@ -245,7 +245,22 @@
 # result = give_evens_list([x for x in range(1,150)])
 # print(result)
 
-stock_prices = [('APPL',200), ('GOOG', 400)]
+work_hours = [('Abby',100), ('Billy', 400), ('John', 900)]
 
-for ticker,price in stock_prices:
-    print(f'{ticker} = {price}')
+def employee_check(work_hours):
+    current_max = 0
+    employee_of_month = ''
+
+    for employee, hours in work_hours:
+        if hours > current_max:
+            current_max = hours
+            employee_of_month = employee
+        else:
+            pass
+ 
+    #Return
+    print(employee_of_month, current_max)
+    return (employee_of_month, current_max)
+
+employee_check(work_hours)
+ 

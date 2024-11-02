@@ -355,43 +355,52 @@
 # row1[position_index] = 'X'
 # display(row1, row2, row3)
 
-row1 = ['','','']
-row2 = ['','','']
-row3 = ['','','']
+# row1 = ['','','']
+# row2 = ['','','']
+# row3 = ['','','']
 
 
-def display(row1, row2, row3):
-    print(row1)
-    print(row2)
-    print(row3)
+# def display(row1, row2, row3):
+#     print(row1)
+#     print(row2)
+#     print(row3)
 
-def user_choice():
+# def user_choice():
 
-    #Variables
+#     #Variables
 
-    #Initial
-    choice = "WRONG"
-    acceptable_range = range(0,10)
-    within_range = False
+#     #Initial
+#     choice = "WRONG"
+#     acceptable_range = range(0,10)
+#     within_range = False
 
-    #Two conditions to check
-    #DIGIT OR WITHIN_RANGE =- False
-    while choice.isdigit() == False:
+#     #Two conditions to check
+#     #DIGIT OR WITHIN_RANGE =- False
+#     while choice.isdigit() == False:
 
-        choice = input("Please enter number (0-10): ")
+#         choice = input("Please enter number (0-10): ")
         
-        #Digit check
-        if choice.isdigit() == False:
-            print("Sorry, not a digit!")
-        #Range check
-        if choice.isdigit() == True:
-            if int(choice) in acceptable_range:
-                within_range = True
-            else:
-                print("Sorry, you're out of 0-10 acceptable range")
-                within_range = False
+#         #Digit check
+#         if choice.isdigit() == False:
+#             print("Sorry, not a digit!")
+#         #Range check
+#         if choice.isdigit() == True:
+#             if int(choice) in acceptable_range:
+#                 within_range = True
+#             else:
+#                 print("Sorry, you're out of 0-10 acceptable range")
+#                 within_range = False
                  
     
-    return int(choice)
+#     return int(choice)
 
-user_choice()
+# user_choice()
+from IPython.display import clear_output
+board = ''
+
+def dsiplay_board(board):
+    print(board[7] + '|' +board[8]+ '|' + board[9])
+    print(board[4] + '|' +board[5]+ '|' + board[6])
+    print(board[1] + '|' +board[2]+ '|' + board[3])
+
+display_board(board)

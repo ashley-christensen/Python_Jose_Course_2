@@ -320,8 +320,40 @@
 
 # myfunc(fruit='fruit')
 
-def myfunc(*args, **kwargs):
-    print('I would like {} {}'.format(args[1], kwargs['food']))
+# def myfunc(*args, **kwargs):
+#     print('I would like {} {}'.format(args[1], kwargs['fruit']))
 
-result = myfunc(10,20,30, fruit = 'apple', food = 'rice')
-print(result)
+# result = myfunc(10,20,30, fruit = 'apple', food = 'rice')
+# print(result)
+
+# tuple = (0,1,2)
+
+# def myfunc(*args):
+#     my_list = []
+    
+#     for thing in args:
+#         if thing%2 == 0:
+#             my_list.append(thing)
+#     print(my_list)
+#     return my_list 
+# myfunc(tuple)
+
+# def myfunc(**kwargs):
+    
+#     for item in kwargs:
+#         print(item)
+
+# result = myfunc()
+
+row1 = ['','','']
+row2 = ['','','']
+row3 = ['','','']
+
+
+def display(row1, row2, row3):
+    print(row1)
+    print(row2)
+    print(row3)
+
+row2[1] = 'X'
+display(row1, row2, row3)

@@ -27,3 +27,4 @@ my_dog = Dog(breed='Yorkie', name="Anna", spots=False)
 print(type(my_dog))
 
 print(my_dog.species)
+print("test")

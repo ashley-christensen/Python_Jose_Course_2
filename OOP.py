@@ -8,35 +8,56 @@
 #         #perform some action
 #         print(self.param1)
 
-class Dog():
+# class Dog():
 
-    #Class Object Attribute
-    #Same for any Instance of Class
-    species = 'mammal'
+#     #Class Object Attribute
+#     #Same for any Instance of Class
+#     species = 'mammal'
 
-    def __init__(self, breed, name, spots): 
+#     def __init__(self, breed, name): 
 
-        #Assign using self.attribute_name
-        self.breed = breed
-        self.name = name
+#         #Assign using self.attribute_name
+#         self.breed = breed
+#         self.name = name
 
-        #Excpect boolean True/False
-        self.spots = spots
+#         # Methods
+#     def bark(self, number):
+#             print("WOOF! My name is {} and the number is {}".format(self.name, number))
 
-my_dog = Dog(breed='Yorkie', name="Anna", spots=False)
-print(type(my_dog))
+# my_dog = Dog(breed='Yorkie', name="Anna")
+# print(type(my_dog))
 
-print(my_dog.breed)
+# print(my_dog.name)
+# my_dog.bark(36)
 
-class Cat(): 
-    species = 'mammal'
+# class Cat(): 
+#     species = 'mammal'
 
-    def __init__(self, breed, name, stripes):
-        self.breed = breed
-        self.name = name
+#     def __init__(self, breed, name, stripes):
+#         self.breed = breed
+#         self.name = name
 
-        self.stripes = stripes
+#         self.stripes = stripes
 
-my_cat = Cat(breed= 'orange', name="Louie", stripes=True)
-print(type(my_cat))
-print(my_cat.name)
+# my_cat = Cat(breed= 'orange', name="Louie", stripes=True)
+# print(type(my_cat))
+# print(my_cat.name)
+
+class Circle():
+     
+    # Class Object Attribute
+    pi = 3.14
+
+    def __init__(self, radius=1):
+         
+         self.radius = radius
+         self.area = radius*radius*self.pi
+
+    # Method
+    def get_circumference(self):
+         return self.radius * self.pi * 2
+    
+my_circle = Circle()
+
+print(my_circle.get_circumference())
+print(my_circle.area)

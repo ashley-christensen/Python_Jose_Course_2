@@ -28,3 +28,15 @@ print(type(my_dog))
 
 print(my_dog.breed)
 
+class Cat(): 
+    species = 'mammal'
+
+    def __init__(self, breed, name, stripes):
+        self.breed = breed
+        self.name = name
+
+        self.stripes = stripes
+
+my_cat = Cat(breed= 'orange', name="Louie", stripes=True)
+print(type(my_cat))
+print(my_cat.name)

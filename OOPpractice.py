@@ -7,7 +7,7 @@ class Line:
         self.coor2 = coor2
 
     def distance(self):
-        coords = (self.coor2[0]-self.coor1[0])**2 + (self.coor2[1] - self.coor2[1])**2
+        coords = (self.coor2[0]-self.coor1[0])**2 + (self.coor2[1] - self.coor1[1])**2
         return math.sqrt(coords)
 
     def slope(self):
